@@ -1,0 +1,151 @@
+.countainer{
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.formContainer{
+    border: 1px solid silver;
+    width: fit-content;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 10px;
+    height: fit-content;
+    background-color: #ffff;
+}
+
+.header{
+    text-align: left;
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+    color: #1a73e8;
+}
+
+
+.formFailed{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    height: 75px;
+}
+
+.formFailed label{
+    text-align: left;
+    margin-bottom: 5px;
+    color: rgb(85, 85, 85);
+}
+
+.formInput{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid silver;
+    padding: 0px 10px;
+    transition: all 0.1s ease-in;
+}
+
+.unCompailed{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 0px 10px;
+    border: 1px solid red;
+    transition: all 0.1s ease-in;
+}
+
+.formInput:focus,
+.unCompailed:focus{
+    line-height:30px;
+    outline: none;
+    height: 30px;
+    border: 1px solid #1a73e8;
+}
+
+.formFailed span{
+    height: 10px;
+    text-align: left;
+    margin-top: 5px;
+    width: fit-content;
+    font-size: 0.7rem;
+    color: red;
+    line-height: 10px;
+    padding: 2px 3px;
+    border-radius: 3px;
+    background-color: rgba(255, 0, 0, 0,173);
+}
+
+.cheboxCountainer{
+    display: flex;
+    font-size: 0.8rem;
+    flex-direction: row !important;
+    align-items: center;
+}
+
+.formFailed:nth-child(6) label{
+    color: #1a73e8;
+}
+
+input[type='checkbox']{
+    margin-left: 20px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #1a73e8;
+    appearance: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in;
+}
+
+input[type='checkbox']:checked{
+    width: 18px;
+    height: 18px;
+    background-color: #1a73e8;
+    border-radius: 50%;
+}
+
+.formBouttns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formBouttns button{
+    background-color: #1a73e8;
+    padding: 10px 20px ;
+    color: #ffff;
+    border-radius: 10px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.1s ease-in;
+    cursor: pointer;
+}
+
+.formBouttns:hover{
+    color: #004aaa;
+}
+
+.formBouttns a{
+    color: #1a73e8;
+    text-decoration:none;
+    transition: all 0.1s ease-in;
+    font-weight: 700;
+}
+
+.formBouttns a:hover{
+    color: #004aaa;
+}
+
+@media(max-width:440px){
+    .formContainer{
+        padding: 20px;
+        margin:50px 20px ;
+        width: 90%;
+    }
+    .formInput{
+        width: 90%;
+    }
+    .unCompailed{
+        width: 90%;
+    }
+}
